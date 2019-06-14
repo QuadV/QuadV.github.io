@@ -279,7 +279,7 @@ function onClick(element) {
 
 // new workbook page
 function onClickHTML(element) {
-	var url = "workbook.html?name=" + encodeURIComponent(element.getAttribute("href"));
+	var url = "workbook.html?name=" + element.getAttribute("href");
     window.location.href = url;
 }
 
