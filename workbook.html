@@ -10,6 +10,27 @@
 	.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
 	.w3-third img:hover{opacity: 1}
 	</style>
+	<head>
+	<script src="assets/js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript">
+			var queryString = new Array();
+			$(function () {
+				if (queryString.length == 0) {
+					if (window.location.search.split('?').length > 1) {
+						var params = window.location.search.split('?')[1].split('&');
+						for (var i = 0; i < params.length; i++) {
+							var key = params[i].split('=')[0];
+							var value = decodeURIComponent(params[i].split('=')[1]);
+							queryString[key] = value;
+						}
+					}
+				}
+				if (queryString["name"] != null) {
+					$("#includedContent").load("work/" + queryString["name"] + ".html");
+				}
+			});
+	</script>	  
+	</head>
     <body class="w3-light-grey w3-content" style="max-width:1600px">
 
 		<!-- Sidebar/menu -->
@@ -43,25 +64,7 @@
 		  </div>
 		  
 	<!-- Script towards the end -->
-	<script src="assets/js/jquery-1.10.2.min.js"></script>
-        <script type="text/javascript">
-			var queryString = new Array();
-			$(function () {
-				if (queryString.length == 0) {
-					if (window.location.search.split('?').length > 1) {
-						var params = window.location.search.split('?')[1].split('&');
-						for (var i = 0; i < params.length; i++) {
-							var key = params[i].split('=')[0];
-							var value = decodeURIComponent(params[i].split('=')[1]);
-							queryString[key] = value;
-						}
-					}
-				}
-				if (queryString["name"] != null) {
-					$("#includedContent").load("/work/" + queryString["name"] + ".html");
-				}
-			});
-	</script>	  
+	
 	<script>
 		// Script to open and close sidebar
 		function w3_open() {
