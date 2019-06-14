@@ -119,19 +119,19 @@ body, html {
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-	  <a class="zoom green" href="work/LDA_iPython.html"><img class="img-responsive" src="assets/img/LDA.jpg" alt="Linear Discriminant Analysis" /></a>
+	  <a class="zoom green" value="LDA_iPython.html" onclick="onClickHTML(this)"><img class="img-responsive" src="assets/img/LDA.jpg" title="Linear Discriminant Analysis" /></a>
     </div>
 
     <div class="w3-col m3">
-      <a class="zoom green" href="work/PCA_iPython.html"><img class="img-responsive" src="assets/img/PCA.png" alt="Principal Component Analysis" /></a>
+      <a class="zoom green" value="PCA_iPython.html" onclick="onClickHTML(this)"><img class="img-responsive" src="assets/img/PCA.png" title="Principal Component Analysis" /></a>
     </div>
 
     <div class="w3-col m3">
-      <a class="zoom green" href="work/SingleLayerNN.html"><img class="img-responsive" src="assets/img/SingleLayerNN.png" alt="Single Layer Neural Network" /></a>
+      <a class="zoom green" value="SingleLayerNN.html" onclick="onClickHTML(this)"><img class="img-responsive" src="assets/img/SingleLayerNN.png" title="Single Layer Neural Network" /></a>
     </div>
 	
     <div class="w3-col m3">
-	    <a class="zoom green" href="work/1BasicClassification.html"><img class="img-responsive" src="assets/img/FashionMNIST.png" alt="Fashion MNIST Classification using Keras" /></a>
+	    <a class="zoom green" value="1BasicClassification.html" onclick="onClickHTML(this)"><img class="img-responsive" src="assets/img/FashionMNIST.png" title="Fashion MNIST Classification using Keras" /></a>
     </div>
   </div>
 	<!--
@@ -275,6 +275,12 @@ function onClick(element) {
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
+}
+
+// new workbook page
+function onClickHTML(element) {
+	var url = "workbook.html?name=" + encodeURIComponent(element.value);
+    window.location.href = url;
 }
 
 // Change style of navbar on scroll

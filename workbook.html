@@ -1,14 +1,27 @@
 <html>
     <head>
-	
         <script src="assets/js/jquery-1.10.2.min.js"></script>
-        <script>
-            $(function(){
-                $("#includedContent").load("work/LDA_iPython.html");
-            });
-        </script>
+        <script type="text/javascript">
+			var queryString = new Array();
+			$(function () {
+				if (queryString.length == 0) {
+					if (window.location.search.split('?').length > 1) {
+						var params = window.location.search.split('?')[1].split('&');
+						for (var i = 0; i < params.length; i++) {
+							var key = params[i].split('=')[0];
+							var value = decodeURIComponent(params[i].split('=')[1]);
+							queryString[key] = value;
+						}
+					}
+				}
+				if (queryString["name"] != null) {
+					$("#includedContent").load("work/" + queryString["name"]);
+				}
+			});
+		</script>
     </head>
     <body>
     <div id="includedContent"></div>
     </body>
 </html>
+
