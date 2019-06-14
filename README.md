@@ -19,6 +19,7 @@
 
 ##### Models
 
-1. [Fashion MNIST Classification using Keras](<https://viona91.github.io/workbook.html?name=1BasicClassification>)
-2. [Single Layer Neural Network from Scratch](<https://viona91.github.io/workbook.html?name=SingleLayerNN>) (GitHub project link - [here](<https://github.com/Viona91/Basic-Classification-neural-network-model-using-Keras>))
+1. [Fashion MNIST Classification using Keras](<https://viona91.github.io/workbook.html?name=1BasicClassification>) (GitHub project link - [here](<https://github.com/Viona91/Basic-Classification-neural-network-model-using-Keras>))
+2. [Text Classification for Movie Reviews](<https://viona91.github.io/workbook.html?name=2BasicTextClassification>) (GitHub project link - [here](<https://github.com/Viona91/Text-Classification-using-Keras>))
+3. [Single Layer Neural Network from Scratch](<https://viona91.github.io/workbook.html?name=SingleLayerNN>) 
 
