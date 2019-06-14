@@ -9,7 +9,9 @@
 <!-- Custom styles for this template -->
 <link href="assets/css/main.css" rel="stylesheet">
 
-
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="assets/js/hover.zoom.js"></script>
+<script src="assets/js/hover.zoom.conf.js"></script>
 <link rel="stylesheet" href="assets/css/w3.css">
 <link rel="stylesheet" href="assets/css/fonts-googleapis.css">
 <link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -117,19 +119,19 @@ body, html {
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-	  <a class="zoom green" href="LDA_iPython.html" onclick="onClickHTML('LDA_iPython')"><img class="img-responsive" src="assets/img/LDA.jpg" title="Linear Discriminant Analysis" /></a>
+	  <a class="zoom green" onclick="onClickHTML('LDA_iPython')"><img class="img-responsive" src="assets/img/LDA.jpg" title="Linear Discriminant Analysis" /></a>
     </div>
 
     <div class="w3-col m3">
-      <a class="zoom green" href="PCA_iPython.html" onclick="onClickHTML('PCA_iPython')"><img class="img-responsive" src="assets/img/PCA.png" title="Principal Component Analysis" /></a>
+      <a class="zoom green" onclick="onClickHTML('PCA_iPython')"><img class="img-responsive" src="assets/img/PCA.png" title="Principal Component Analysis" /></a>
     </div>
 
     <div class="w3-col m3">
-      <a class="zoom green" href="SingleLayerNN.html" onclick="onClickHTML('SingleLayerNN')"><img class="img-responsive" src="assets/img/SingleLayerNN.png" title="Single Layer Neural Network" /></a>
+      <a class="zoom green" onclick="onClickHTML('SingleLayerNN')"><img class="img-responsive" src="assets/img/SingleLayerNN.png" title="Single Layer Neural Network" /></a>
     </div>
 	
     <div class="w3-col m3">
-	    <a class="zoom green" href="1BasicClassification.html" onclick="onClickHTML('1BasicClassification')"><img class="img-responsive" src="assets/img/FashionMNIST.png" title="Fashion MNIST Classification using Keras" /></a>
+	    <a class="zoom green" onclick="onClickHTML('1BasicClassification')"><img class="img-responsive" src="assets/img/FashionMNIST.png" title="Fashion MNIST Classification using Keras" /></a>
     </div>
   </div>
 	<!--
@@ -266,10 +268,7 @@ body, html {
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
  -->
- 
-<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="assets/js/hover.zoom.js"></script>
-<script src="assets/js/hover.zoom.conf.js"></script>
+
 <script>
 
 // new workbook page
