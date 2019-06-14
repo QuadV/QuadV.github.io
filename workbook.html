@@ -1,6 +1,49 @@
-<html>
-    <head>
-        <script src="assets/js/jquery-1.10.2.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+	<title>WorkBook</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/w3.css">
+	<link rel="stylesheet" href="assets/css/raleway.css">
+	<style>
+	body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+	.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+	.w3-third img:hover{opacity: 1}
+	</style>
+    <body class="w3-light-grey w3-content" style="max-width:1600px">
+
+		<!-- Sidebar/menu -->
+		<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+		  <h3 class="w3-padding-64 w3-center"><b>My Online Notebook</b></h3>
+		  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+		  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+		  <a href="work.html" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a> 
+		  <a href="index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
+		  <!--<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>-->
+		</nav>
+
+		<!-- Top menu on small screens -->
+		<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+		  <span class="w3-left w3-padding">My Online Notebook</span>
+		  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+		</header>
+
+		<!-- Overlay effect when opening sidebar on small screens -->
+		<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+		<!-- !PAGE CONTENT! -->
+		<div class="w3-main" style="margin-left:300px">
+
+		  <!-- Push down content on small screens --> 
+		  <div class="w3-hide-large" style="margin-top:83px"></div>
+		  
+		  <!-- Photo grid -->
+		  <div class="w3-row">
+				<div id="includedContent"></div>
+		  </div>
+		  
+	<!-- Script towards the end -->
+	<script src="assets/js/jquery-1.10.2.min.js"></script>
         <script type="text/javascript">
 			var queryString = new Array();
 			$(function () {
@@ -15,13 +58,22 @@
 					}
 				}
 				if (queryString["name"] != null) {
-					$("#includedContent").load("work/" + queryString["name"] + ".html");
+					$("#includedContent").load("./work/" + queryString["name"] + ".html");
 				}
 			});
-		</script>
-    </head>
-    <body>
-    <div id="includedContent"></div>
+	</script>	  
+	<script>
+		// Script to open and close sidebar
+		function w3_open() {
+		  document.getElementById("mySidebar").style.display = "block";
+		  document.getElementById("myOverlay").style.display = "block";
+		}
+		 
+		function w3_close() {
+		  document.getElementById("mySidebar").style.display = "none";
+		  document.getElementById("myOverlay").style.display = "none";
+		}
+	</script>
     </body>
 </html>
 
