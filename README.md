@@ -23,3 +23,8 @@
 2. [Text Classification for Movie Reviews](<https://viona91.github.io/workbook.html?name=2BasicTextClassification>) (GitHub project link - [here](<https://github.com/Viona91/Text-Classification-using-Keras>))
 3. [Single Layer Neural Network from Scratch](<https://viona91.github.io/workbook.html?name=SingleLayerNN>) 
 
+##### Data Science Analysis
+
+1. [Anime Recommendations by Genre](<https://viona91.github.io/workbook.html?name=AnimeRecommendationsByGenre>)
+2. [Baby Names Analysis](<https://viona91.github.io/workbook.html?name=BabyNamesAnalysis>)
+
