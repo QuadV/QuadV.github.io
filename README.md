@@ -1,4 +1,4 @@
-# [My Online Notebook](<https://viona91.github.io/index.html>)
+# [My Online Notebook](<https://QuadV.github.io/index.html>)
 
 ##### *I love learning and exploring new things*
 
@@ -14,17 +14,17 @@
 
 ##### Concepts
 
-1. [Linear Discriminant Analysis](<https://viona91.github.io/workbook.html?name=LDA_iPython>)
-2. [Principal Component Analysis](<https://viona91.github.io/workbook.html?name=PCA_iPython>)
+1. [Linear Discriminant Analysis](<https://QuadV.github.io/workbook.html?name=LDA_iPython>)
+2. [Principal Component Analysis](<https://QuadV.github.io/workbook.html?name=PCA_iPython>)
 
 ##### Models
 
-1. [Fashion MNIST Classification using Keras](<https://viona91.github.io/workbook.html?name=1BasicClassification>) (GitHub project link - [here](<https://github.com/Viona91/Basic-Classification-neural-network-model-using-Keras>))
-2. [Text Classification for Movie Reviews](<https://viona91.github.io/workbook.html?name=2BasicTextClassification>) (GitHub project link - [here](<https://github.com/Viona91/Text-Classification-using-Keras>))
-3. [Single Layer Neural Network from Scratch](<https://viona91.github.io/workbook.html?name=SingleLayerNN>) 
+1. [Fashion MNIST Classification using Keras](<https://QuadV.github.io/workbook.html?name=1BasicClassification>) (GitHub project link - [here](<https://github.com/QuadV/Basic-Classification-neural-network-model-using-Keras>))
+2. [Text Classification for Movie Reviews](<https://QuadV.github.io/workbook.html?name=2BasicTextClassification>) (GitHub project link - [here](<https://github.com/QuadV/Text-Classification-using-Keras>))
+3. [Single Layer Neural Network from Scratch](<https://QuadV.github.io/workbook.html?name=SingleLayerNN>) 
 
 ##### Data Science Analysis
 
-1. [Anime Recommendations by Genre](<https://viona91.github.io/workbook.html?name=AnimeRecommendationsByGenre>)
-2. [Baby Names Analysis](<https://viona91.github.io/workbook.html?name=BabyNamesAnalysis>)
+1. [Anime Recommendations by Genre](<https://QuadV.github.io/workbook.html?name=AnimeRecommendationsByGenre>)
+2. [Baby Names Analysis](<https://QuadV.github.io/workbook.html?name=BabyNamesAnalysis>)
 
