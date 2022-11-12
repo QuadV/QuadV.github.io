@@ -241,9 +241,9 @@ function onClickHTML(element) {
 // function to open PDF
 function onClickPDF(element)
 {
-	var url = "workbook.pdf?name=" + element;
-    window.location.href = url;
-<!--	window.open(th.name,'_blank');-->
+	var url = "work/" + element + ".pdf";
+    window.location.href = url
+<!--    window.location.target="_blank"-->
 }
 // Script to open and close sidebar
 function w3_open() {
