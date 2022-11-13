@@ -53,6 +53,7 @@
 	<div class="w3-col m3">
 		<a class="zoom green extra-img" onclick="onClickHTML('2BasicTextClassification')"><img class="img-responsive" src="assets/img/movie-review.png" title="Text Classification for Movie Reviews" /> </a>
 	</div>
+
   </div>
   
     <div class="w3-center">
@@ -65,7 +66,9 @@
 		<div class="w3-col m3">
 			<a class="zoom green extra-img" onclick="onClickHTML('BabyNamesAnalysis')"><img class="img-responsive" src="assets/img/baby.jpg" title="Baby Names Analysis" /></a>
 		</div>
-		<!--add 1 more items here with div enclosed-->
+		<div class="w3-col m3">
+			<a class="zoom green extra-img" onclick="onClickPDF('BankruptcyPrediction')"><img class="img-responsive" src="assets/img/BankruptcyPrediction.jpeg" title="Bankruptcy Prediction" /></a>
+		</div>
     </div>
     
     <!--add html images here - in sets of 3-->
@@ -234,6 +237,13 @@
 function onClickHTML(element) {
 	var url = "workbook.html?name=" + element;
     window.location.href = url;
+}
+// function to open PDF
+function onClickPDF(element)
+{
+	var url = "work/" + element + ".pdf";
+    window.location.href = url
+<!--    window.location.target="_blank"-->
 }
 // Script to open and close sidebar
 function w3_open() {
